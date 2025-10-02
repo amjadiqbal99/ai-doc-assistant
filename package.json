@@ -1,0 +1,57 @@
+{
+  "name": "saas-starter-kit",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "test": "vitest",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "next": "14.0.0",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "tailwindcss": "^3.0.0",
+    "shadcn/ui": "^1.0.0",
+    "langchain": "^0.0.1",
+    "openai": "^3.0.0",
+    "pinecone-client": "^0.0.1",
+    "react-query": "^3.0.0",
+    "pino": "^8.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.0",
+    "eslint": "^8.0.0",
+    "prettier": "^2.0.0",
+    "husky": "^7.0.0",
+    "vitest": "^0.0.1",
+    "playwright": "^1.0.0"
+  },
+  "eslintConfig": {
+    "extends": "next/core-web-vitals"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint . && prettier --check ."
+    }
+  },
+  "keywords": [
+    "saas",
+    "starter-kit",
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "langchain",
+    "openai",
+    "pinecone"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
